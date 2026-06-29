@@ -3,11 +3,16 @@
 import { useRef, useState } from "react"
 import { Film, Volume2, VolumeX } from "lucide-react"
 
-// To add your own clips: drop video files into `public/videos/`
-// (use .mp4 or .webm), then add an entry here for each one.
 const videos: { src: string; caption: string }[] = [
-  // { src: "/videos/clip-1.mp4", caption: "Our first dance" },
-  // { src: "/videos/clip-2.mp4", caption: "Laughing until it hurt" },
+  { src: "/videos/clip-1.mp4", caption: "Us, in motion" },
+  { src: "/videos/clip-2.mp4", caption: "Caught mid-laugh" },
+  { src: "/videos/clip-3.mp4", caption: "Just being us" },
+  { src: "/videos/clip-4.mp4", caption: "Silly little moments" },
+  { src: "/videos/clip-5.mp4", caption: "Our kind of fun" },
+  { src: "/videos/clip-6.mp4", caption: "Never a dull second" },
+  { src: "/videos/clip-7.mp4", caption: "Forever like this" },
+  { src: "/videos/clip-8.mp4", caption: "My favorite person" },
+  { src: "/videos/clip-9.mp4", caption: "Always you and me" },
 ]
 
 export function Videos() {
@@ -45,7 +50,7 @@ export function Videos() {
       </div>
 
       {videos.length > 0 ? (
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div className="grid grid-cols-2 gap-5 sm:grid-cols-3">
           {videos.map((video, index) => {
             const isActive = activeIndex === index
             return (
@@ -72,7 +77,7 @@ export function Videos() {
                     muted
                     loop
                     playsInline
-                    className="h-full w-full object-cover"
+                    className="aspect-[9/16] h-full w-full object-cover"
                   />
                   <span className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full bg-foreground/55 text-background backdrop-blur-sm transition-colors group-hover:bg-foreground/70">
                     {isActive ? (
