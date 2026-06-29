@@ -1,15 +1,14 @@
 import Image from "next/image"
 
 const photos = [
-  { src: "/photos/photo-1.png", caption: "Coffee and endless laughter" },
-  { src: "/photos/photo-2.png", caption: "Our kind of sunset" },
-  { src: "/photos/photo-3.png", caption: "A promise in every touch" },
-  { src: "/photos/photo-4.png", caption: "Dancing in the living room" },
-  { src: "/photos/photo-5.png", caption: "Even the rain felt warm" },
-  { src: "/photos/photo-6.png", caption: "Slow afternoons together" },
-  { src: "/photos/photo-7.png", caption: "Watching the world go by" },
-  { src: "/photos/photo-8.png", caption: "Just you and me" },
-  { src: "/photos/photo-9.png", caption: "Flowers, always for you" },
+  { src: "/photos/us-3.jpg", caption: "Resting my head where I feel safest" },
+  { src: "/photos/us-1.jpg", caption: "Just us, soaking up the sun" },
+  { src: "/photos/us-5.jpg", caption: "Coffee dates with my favorite person" },
+  { src: "/photos/us-8.jpg", caption: "Silly together, even with our little one" },
+  { src: "/photos/us-4.jpg", caption: "Every elevator ride is a photoshoot" },
+  { src: "/photos/us-2.jpg", caption: "You make me laugh like no one else" },
+  { src: "/photos/us-6.jpg", caption: "Always better when we match" },
+  { src: "/photos/us-7.jpg", caption: "My reason to smile" },
 ]
 
 export function Gallery() {

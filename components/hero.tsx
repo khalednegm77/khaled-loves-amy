@@ -5,11 +5,11 @@ export function Hero() {
   return (
     <section className="relative isolate flex min-h-screen items-center justify-center overflow-hidden">
       <Image
-        src="/photos/hero.png"
-        alt="khaled and amyy walking hand in hand at golden hour"
+        src="/photos/us-3.jpg"
+        alt="khaled and amyy close together in the sunlight"
         fill
         priority
-        className="object-cover"
+        className="object-cover object-[center_30%]"
       />
       <div
         aria-hidden="true"
